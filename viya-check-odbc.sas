@@ -13,7 +13,7 @@ Database=mySAS;Server=,2433;UID=;PWD="
 trace=yes;
 
 libname test odbc dsn="Databricks" uid="test" password="test";
-
+libname testnih odbc dns="sqlServer" uid="SQL" password="";
 cas;
 
 caslib odbclib desc="Databricks"
