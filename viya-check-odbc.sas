@@ -26,3 +26,9 @@ catalog="*" );
 caslib _all_ assign;
  
 options msglevel=i;
+
+proc casutil;
+list tables incaslib="odbclib";
+load casdata="class" incaslib="odbclib"
+casout="class";
+quit;
