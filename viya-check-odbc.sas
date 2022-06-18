@@ -9,5 +9,5 @@
 options sastrace='d,d,,d' sastraceloc=saslog nostsuffix sql_ip_trace=(note,source) msglevel=i fullstimer ;
 
 libname risk1 odbc required="Driver=/opt/microsoft/msodbcsql18/lib64/libmsodbcsql-18.0.so.1.1;
-Database=mySAS;Server=viyabuildbox.franihviya.sashq-d.openstack.sas.com,2433;UID=sas;PWD=Orion123"
+Database=mySAS;Server=,2433;UID=;PWD="
 trace=yes;
