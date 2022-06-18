@@ -1,6 +1,6 @@
-libname x JDBC driverclass="com.vertica.jdbc.Driver"
- URL="jdbc:vertica://monserveurvertica:5433/myvertica"
+libname x JDBC driverclass="com.simba.spark.jdbc41.Driver"
+ URL="jjdbc:spark://community.cloud.databricks.com:443/default;transportMode=http;ssl=1;httpPath=sql/protocolv1/o/4305041633684168/0618-164846-okgc0sts;AuthMech=3;UID=token;PWD=<personal-access-token>"
  user="dbadmin"
- database="myvertica"
- password="password" 
- classpath="/opt/sas/install/AccessClients/9.4/JDBC/";
+ database=""
+ password="" 
+ classpath="/opt/sas/jdbc_databricks/DatabricksJDBC42-2.6.25.1044/";
