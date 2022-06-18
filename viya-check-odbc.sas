@@ -14,6 +14,8 @@ trace=yes;
 
 libname test odbc dsn="Databricks" uid="test" password="test";
 
+cas;
+
 caslib odbclib desc="Databricks"
 datasource=(srctype="odbc"
 username="username"
