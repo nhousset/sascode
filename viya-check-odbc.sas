@@ -13,3 +13,14 @@ Database=mySAS;Server=,2433;UID=;PWD="
 trace=yes;
 
 libname test odbc dsn="Databricks" uid="test" password="test";
+
+caslib odbclib desc="Databricks"
+datasource=(srctype="odbc"
+username="username"
+password="password"
+database="Databricks"
+catalog="*" );
+ 
+caslib _all_ assign;
+ 
+options msglevel=i;
