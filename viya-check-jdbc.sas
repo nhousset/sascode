@@ -9,9 +9,9 @@ libname x JDBC driverclass=" com.databricks.client.jdbc.Driver"
 
  caslib jdcaslib desc='JDBC Caslib' 
    dataSource=(srctype='jdbc',                   
-               url="jdbc:postgresql://viya.sas:9021/1402",
-               username='myuser1', 
-               password='myPwd'
+               url="jdbc:postgresql://viya.sas:5432/postgres",
+               username='dbmsowner', 
+               password='gF5va1hJIXnpUfKyMf85f6J4pdIT2XU'
                class="org.postgresql.Driver"
                classpath="/opt/Viya35/jdbc/drivers/postgresql/");
                
