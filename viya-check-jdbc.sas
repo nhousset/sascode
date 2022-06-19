@@ -5,13 +5,21 @@ libname x JDBC driverclass=" com.databricks.client.jdbc.Driver"
  password="" 
  classpath="/opt/sas/jdbc_databricks/DatabricksJDBC42-2.6.25.1044/";
  
+ 
+ libname pshared JDBC driverclass="org.postgresql.Driver"
+ URL="jdbc:postgresql://viya.sas:5432/SharedServices"
+ user="dbmsowner"
+ password="" 
+ classpath="/opt/Viya35/jdbc/drivers/postgresql/";
+
+
  cas;
 
  caslib jdcaslib desc='JDBC Caslib' 
    dataSource=(srctype='jdbc',                   
                url="jdbc:postgresql://viya.sas:5432/postgres",
                username='dbmsowner', 
-               password='gF5va1hJIXnpUfKyMf85f6J4pdIT2XU'
+               password=''
                class="org.postgresql.Driver"
                classpath="/opt/Viya35/jdbc/drivers/postgresql/");
                
