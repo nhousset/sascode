@@ -5,14 +5,23 @@ libname x JDBC driverclass=" com.databricks.client.jdbc.Driver"
  password="" 
  classpath="/opt/sas/jdbc_databricks/DatabricksJDBC42-2.6.25.1044/";
  
- 
+ cas;
+
  caslib jdcaslib desc='JDBC Caslib' 
-   dataSource=(srctype='jdbc',                   1
-               url="jdbc:postgresql://<PostgreSQL-server>:<PostgreSQL-port>/
-                        <PostgreSQL-database>",
+   dataSource=(srctype='jdbc',                   
+               url="jdbc:postgresql://viya.sas:9021/1402",
                username='myuser1', 
                password='myPwd'
                class="org.postgresql.Driver"
                classpath="/opt/Viya35/jdbc/drivers/postgresql/");
                
-               
+  
+caslib _all_ assign;
+ 
+options msglevel=i;
+
+proc casutil;
+list tables incaslib="jdcaslib";
+load casdata="class" incaslib="jdcaslib"
+casout="class";
+quit;             
