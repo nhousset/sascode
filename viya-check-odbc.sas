@@ -31,4 +31,4 @@ proc casutil;
 list tables incaslib="odbclib";
 load casdata="class" incaslib="odbclib"
 casout="class";
-quit;
+quit; 
