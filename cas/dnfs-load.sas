@@ -24,6 +24,14 @@ proc cas;
    print _perf;
 run; 
 
+
+
+proc cas;
+	table.tableinfo / table='dnfsds';
+	table.tableDetails / table='dnfsds';
+quit;
+
+
 /* path */
 
 caslib caslibpath path="/opt/sas/dnfs" datasource=(srctype="path") ;    
