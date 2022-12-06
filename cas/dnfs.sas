@@ -14,3 +14,8 @@ caslib _all_ assign;
 data dnfsds.test;
 set sashelp.prdsale;
 run;
+
+
+proc casutil ;
+save incaslib='dnfsds' casdata='test' outcaslib='dnfsds' casout='test';
+run;
