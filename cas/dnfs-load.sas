@@ -5,7 +5,7 @@ proc cas;
 accessControl.assumeRole / adminRole="superuser";
   action log / logger='App.cas.tkcastkts' level='trace';
  action log / logger='App.cas.datastep' level='trace';
- action log / logger='App.cas.tkcal' level='trace';
+ action log / logger='App.cas' level='trace';
  quit;
 
 caslib dnfsds DROP;
