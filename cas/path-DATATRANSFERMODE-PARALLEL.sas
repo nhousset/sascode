@@ -9,11 +9,12 @@ accessControl.assumeRole / adminRole="superuser";
  quit;
 
 
-caslib macas path="/opt/sas/dnfs" datasource=(srctype="path",datatransfermode=parallel) 
+caslib macas path="/opt/sas/dnfs" datasource=(srctype="path") 
 
 caslib _all_ assign;   
 
 proc cas;
    table.loadtable /path="testb.sas7bdat" casOut={name="testb"};
+   importoptions=(filetype="basesas", dataTransferMode="parallel") ;
    print _perf;
 run; 
