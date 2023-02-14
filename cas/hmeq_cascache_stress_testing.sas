@@ -1,4 +1,3 @@
-options cashost="frasepviya35smp.cloud.com" casport=5570;
 options set=CASCLIENTDEBUG=1;
 
 cas master sessopts=(caslib="casuser" timeout=10) ;
